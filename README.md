@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-34D399?style=flat-square)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20(amd64%20%2F%20arm64)-38BDF8?style=flat-square)](#快速安装与构建)
 
-简体中文 · [English](README_EN.md) · [详细使用指南](docs/USAGE.md) · [架构设计](docs/DESIGN.md)
+简体中文 · [English](README_EN.md) · [详细使用指南](docs/USAGE.md) · [路线图](docs/ROADMAP.md) · [架构设计](docs/DESIGN.md)
 
 </div>
 
@@ -164,15 +164,18 @@ aio stop-daemon [-f]   # 优雅停止后台 daemon（存在活跃任务时会列
 
 ## Roadmap
 
-- [x] 多 Agent 统一编排与后台常驻 Daemon
-- [x] 单仓 & 多仓组合 Git Worktree 对比、横向 Diff 与一键 Adopt
-- [x] 原生 Hooks + OSC 标题 + 屏幕状态机多源精准状态监控
-- [x] 控制中心（CLI 一键安装、Magpie 路由、按 Agent 分流代理、多池额度）
-- [x] 局域网手机扫码同步（HTTPS、语音输入、设备 Session 踢出管理、PWA 全屏）
-- [x] `tmux` / MobaXterm / SSH 256 色与 VT 宽字符换行深度兼容
-- [ ] 任务模板与自定义 Agent Adapter 插件配置
-- [ ] 跨机器远程 Daemon 连接（SSH Tunnel / mTLS）
-- [ ] 更丰富的移动端交互操作（任务创建、Diff 采纳、多项目筛选）
+完整规划见 [docs/ROADMAP.md](docs/ROADMAP.md)：
+
+- **v0.1.0（已发布 Pre-release）**：多 Agent 后台保活编排、单/多仓 Git Worktree 对比采纳、多源实时状态与多池额度、控制中心、局域网手机扫码同步、SSH/`tmux`/MobaXterm 适配。
+- **v0.2.0（规划中）**：
+  - [ ] UI 多主题（暗/浅/高对比）、SSH 宽字符适配与 `aio doctor` 诊断
+  - [ ] Magpie 可视化配置向导（Provider 模板、测通、模型下拉选择）
+  - [ ] Skill & MCP 统一管理（跨 Agent 软链/配置同步 + Context Token 估算）
+  - [ ] 内置类 iTerm2 多窗格自由分屏（Agent + Shell / 多 Shell / 双 Agent 同屏）
+  - [ ] 类 IDEA 代码变更审阅（文件树 + 左右双栏 Diff + 评审意见回发 Agent + 本地 Web Diff）
+  - [ ] 公共资料库管理（`--add-dir` / `.git/info/exclude` 零污染只读挂载）
+  - [ ] 跨 Agent 接力摘要（Handoff）、消耗统计面板与跨机器 SSH 远程 Daemon
+- **v0.3.0+（Backlog）**：数据库连接联动（`lazysql` / 只读 DB MCP）、飞书/钉钉 Webhook 通知、自动验收门禁（Verify Gate）。
 
 ---
 

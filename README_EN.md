@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-34D399?style=flat-square)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20(amd64%20%2F%20arm64)-38BDF8?style=flat-square)](#installation--build)
 
-[简体中文](README.md) · English · [Usage Guide (ZH)](docs/USAGE.md) · [Architecture (ZH)](docs/DESIGN.md)
+[简体中文](README.md) · English · [Usage Guide (ZH)](docs/USAGE.md) · [Roadmap (ZH)](docs/ROADMAP.md) · [Architecture (ZH)](docs/DESIGN.md)
 
 </div>
 
@@ -110,6 +110,23 @@ aio status             # Print tasks, run statuses, and live quotas
 aio quota [--probe]    # Display or live-probe agent quotas
 aio stop-daemon [-f]   # Stop background daemon (prompts before interrupting active runs)
 ```
+
+---
+
+## Roadmap
+
+See the full roadmap in [docs/ROADMAP.md](docs/ROADMAP.md):
+
+- **v0.1.0 (Released Pre-release)**: Multi-agent background daemon orchestration, single/multi-repo Git worktree comparison & adoption, multi-source live status & quota pools, Control Center, LAN mobile bridge, SSH/`tmux`/MobaXterm compatibility.
+- **v0.2.0 (Planned)**:
+  - [ ] Multi-theme UI (dark / light / high-contrast), SSH wide-char safe mode & `aio doctor` diagnostics
+  - [ ] Visual Magpie setup wizard (provider templates, connectivity test, model dropdown)
+  - [ ] Unified Skill & MCP manager (cross-agent symlink/config sync + base context token estimation)
+  - [ ] Built-in iTerm2-style recursive split panes (Agent + Shell / multi-Shell / side-by-side Agents)
+  - [ ] IDEA-style code change review (file tree + side-by-side Diff + inline review back to Agent + local Web Diff)
+  - [ ] Shared Knowledge Base manager (`--add-dir` / `.git/info/exclude` zero-pollution read-only mount)
+  - [ ] Cross-Agent Handoff summaries, usage analytics dashboard & remote SSH daemon support
+- **v0.3.0+ (Backlog)**: Database integration (`lazysql` / read-only DB MCP), Lark/DingTalk/Slack webhooks, Verify Gate.
 
 ---
 
