@@ -1,0 +1,21 @@
+# Binaries & release artifacts
+/aio
+/bin/
+/dist/
+*.exe
+*.test
+*.out
+coverage.out
+
+# Local configs / env
+.env
+.env.local
+
+# IDE & OS metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
